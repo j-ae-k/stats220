@@ -8,4 +8,4 @@ A little about me:
 - I am taking STATS 220 because no other courses would fit my schedule
 - I am interested in learning about R programming 
 
-A meme that captures how I currently feel about my university studies is ![]([https://tenor.com/view/cat-cat-meme-funnt-cat-black-cat-sleepy-cat-gif-16409614852005252877](https://media.tenor.com/hKbSHQjJg3YAAAAM/cat-stare.gif))
+A meme that captures how I currently feel about my university studies is ![]([https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif](https://media.tenor.com/sNwl8bDh1uAAAAAM/cat-upset-going-insane.gif))
