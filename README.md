@@ -14,4 +14,4 @@
 
 **A meme that captures how I currently feel about my university studies is** 
 
-![]([https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Ftired-cat-meme-gifs&psig=AOvVaw2pdgfNmLBXVxVRlqlmLyTJ&ust=1741912255826000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjqrfrmhYwDFQAAAAAdAAAAABAE))
+![](https://media1.tenor.com/m/47qpxBq_Tw0AAAAd/cat-cat-meme.gif)
