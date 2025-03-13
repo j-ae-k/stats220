@@ -9,8 +9,7 @@
 2. I am taking STATS 220 because no other courses would fit my schedule
 3. I am interested in learning about R programming
 <!--- unordered lists --->
-* My favourite animal is cats
-* My favourite food is pasta
+* My favourite place to listen to music is [Youtube](https://www.youtube.com/)
 
 **A meme that captures how I currently feel about my university studies is** 
 
