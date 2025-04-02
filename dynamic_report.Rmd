@@ -71,6 +71,7 @@ ggplot(data = latest_data) +
 ```{r summary finding 1, include=FALSE}
 latest_data
 average <- (latest_data$number_of_food_reels_viewed %>% sum() / 20)
+average %>% round(0)
 
 ```
 
