@@ -1,0 +1,88 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+library(tidyverse)
+
+```
+
+```{css}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+```
+
+```{r csv files, include=FALSE}
+# csv file
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSqKM8Hb-Dyvw8VPzRsjGVuVOy8BUUNj7jjDkID4Io6rh3-7iw2FNr5rlz4PhqWla7fnLmZMQ-Acqxy/pub?gid=114000522&single=true&output=csv")
+
+#renamed data
+latest_data <- print(logged_data)%>%
+  rename(food_reel_seen = 2,
+         number_of_food_reels_viewed = 3,
+         interaction_presence = 4)
+
+#data table
+latest_data
+```
+
+## Frequency of food reels on my Instagram feed
+
+### Introduction:
+
+The purpose of this report is to investigate the frequency of food reels on my Instagram feed. In order to investigate this, I created an anonymous Google form which recorded if I saw a food reel on my Instagram feed (Yes/No), the number of food reels I viewed on my Instagram feed and if I interacted(eg. like, comment, share etc) with any of the food reels I saw. This survey was done over the course of 4 days and recorded 20 responses for each variable. Please note that "food reels" for this report refers to Instagram reels which were about food recipes, reviews, resturant recommendations and similar content.   
+
+### Survey findings 1:
+After the 4 days, 16 out of 20 values reported a "Yes" for the presence of food reels on my Instagram feed and the remaing 4 values reported a "No".
+
+```{r graph 1, fig.width= 10}
+ggplot(data = latest_data) +
+  geom_bar(aes(x = food_reel_seen, fill = food_reel_seen)) +
+  labs(title = "Was there an Instagram food reels viewed on my feed?",
+       subtitle = "Comparing presence of food reels on my instagram feed and the number of Google form responses", 
+       caption = "Source: Instagram",
+       x = "Presence of food reels",
+       y = "Number of Google form responses")
+
+
+```
+ 
+
+### Survey findings 2:
+After the 4 days, the most response for the number of food reels viewed on my Instagram feed was 1 reel. The second most response number for the number of food reels viewed was 0 reels and third is a tie between 2 and 6 reels.
+
+```{r graph 2, fig.width= 10}
+ggplot(data = latest_data) +
+  geom_bar(aes(y = number_of_food_reels_viewed), fill = "orange") +
+  labs(title = "How many different food reels were viewed on my feed?",
+       subtitle = "Comparing the number of Google form responses with the number of food reels viewed", 
+       caption = "Source: Instagram",
+       y = "Number of food reels viewed",
+       x = "Number of Google form responses")
+
+
+```
+```{r summary finding 1, include=FALSE}
+latest_data
+average <- (latest_data$number_of_food_reels_viewed %>% sum() / 20)
+
+```
+
+### Survey findings 3:
+The average number of reels viewed from the survey was `r average` reels.
+
+```{r summary finding 2, include=FALSE}
+latest_data
+min <- latest_data$number_of_food_reels_viewed[latest_data$number_of_food_reels_viewed>0] %>% min()
+```
+### Survey findings 4:
+The minimum number of food reels viewed on Instagram was  `r min` reel. Please note that in this calculation I have excluded any data points with '0' because a 0 value would correspond to not seeing any food reels on Instagram at all.   
+
+### Conclusion:
+Overall, I can conclude that my Instagram reels feed has an average frequency of food reels. This is because the average food reels reported was `r average` reels, the minimum number of reels seen was `r min` and the most common response of food reels seen on my Instagram feed was 1 reel.
