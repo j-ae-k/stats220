@@ -36,10 +36,10 @@ latest_data
 
 ### Introduction:
 
-The purpose of this report is to investigate the frequency of food reels on my Instagram feed. In order to investigate this, I created an anonymous Google form which recorded if I saw a food reel on my Instagram feed (Yes/No), the number of food reels I viewed on my Instagram feed and if I interacted(eg. like, comment, share etc) with any of the food reels I saw. This survey was done over the course of 4 days and recorded 20 responses for each variable. Please note that "food reels" for this report refers to Instagram reels which were about food recipes, reviews, resturant recommendations and similar content.   
+The purpose of this report is to investigate the frequency of food reels on my Instagram feed. In order to investigate this, I created an anonymous Google form which recorded if I saw a food reel on my Instagram feed (Yes/No), the number of food reels I viewed on my Instagram feed and if I interacted(eg. like, comment, share etc) with any of the food reels I saw. This survey was done over the course of 4 days and recorded 21 responses for each variable. Please note that "food reels" for this report refers to Instagram reels which were about food recipes, reviews, resturant recommendations and similar content.   
 
 ### Survey findings 1:
-After the 4 days, 16 out of 20 values reported a "Yes" for the presence of food reels on my Instagram feed and the remaing 4 values reported a "No".
+After the 4 days, 16 out of 21 values reported a "Yes" for the presence of food reels on my Instagram feed and the remaing 5 values reported a "No".
 
 ```{r graph 1, fig.width= 10}
 ggplot(data = latest_data) +
